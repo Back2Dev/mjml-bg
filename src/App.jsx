@@ -1,9 +1,9 @@
 import React from 'react'
-import Mjml from './mjml'
+import Editor from './components/editor/editor.jsx'
 
 const App = () => {
   return (
-    <Mjml />
+    <Editor />
   )
 }
 
