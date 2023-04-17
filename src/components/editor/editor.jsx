@@ -47,18 +47,18 @@ const Editor = () => {
     lint: true,
     gutters: ['CodeMirror-lint-markers']
   };
-
+  // <TextField multiline variant="outlined" value={mjml} onChange={handleMjmlChange} sx={{width:"49.9vw"}}/>
   return (
     <Grid container className="main-area">
       <Box width="100vw">
-        <Split className='split'>
+        <Split className='split' >
           <Grid item>
             <Box sx={{ height: "100%"}}>   
-            <TextField multiline variant="outlined" value={mjml} onChange={handleMjmlChange} sx={{width:"49.9vw"}}/>
             <CodeMirror
               value={mjml}
               options={options}
               onChange={onChange}
+              maxHeight='98vh'
             />
             <FormGroup>
               <Button
@@ -66,13 +66,13 @@ const Editor = () => {
                 variant="outlined"
                 style={{ margin: "0px", padding: "0px", height: "20px" }}
               >
-                Covnert to HTML
+                Covnert
               </Button>
             </FormGroup>
             </Box>
           </Grid>
           <Grid item>
-            <Box sx={{ bgcolor: "#cccccc", height: "100%", color: "#FFFFFF" }}>
+            <Box sx={{ bgcolor: "#FFFFFF", width: "100%", height: "100%"}}>
               <div dangerouslySetInnerHTML={{ __html: html }} />
             </Box>
           </Grid>
