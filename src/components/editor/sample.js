@@ -14,7 +14,7 @@ export const sample = `
     <mj-section>
       <mj-column background-color="#fff" width="600px">
         <mj-accordion border="none" padding="0" padding-left="20px" padding-right="20px">
-          <mj-accordion-element icon-wrapped-url="https://i.imgur.com/Xvw0vjq.png" icon-unwrapped-url="https://i.imgur.com/KKHenWa.png" icon-height="15px" icon-width="10px">
+          <mj-accordion-element icon-wrapped-url="downarrow.png" icon-unwrapped-url="uparrow.png" icon-height="15px" icon-width="10px">
             <mj-accordion-title color="#999999" font-size="12px" padding="15px">
               MAP Workshop Materials
             </mj-accordion-title>
@@ -35,7 +35,7 @@ export const sample = `
         <mj-text color="#999999" font-size="10px">
           Do NOT share or forward this email to anyone.
         </mj-text>
-        <mj-button href="https://documentation.mjml.io/" background-color="#cb1c33" color="white" inner-padding="5px" font-size="10px" padding="0">	
+        <mj-button href="http://192.168.1.13:3060/forms/q5" background-color="#cb1c33" color="white" inner-padding="5px" font-size="10px" padding="0">	
             Get started
         </mj-button>
         <mj-divider border-width="1px" border-color="#999999"/>
